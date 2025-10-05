@@ -4,26 +4,20 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout your source code from version control
-                git 'https://github.com/sushanntbhushan/jenkins-pipeline'
+                //git 'https://githddub.com/your/repository.git'
+		echo 'checkout stage'
             }
         }
         stage('Build') {
             steps {
                 // Use Maven to build your project
-                sh 'mvn clean package'
+                echo 'build stage'
             }
         }
         stage('Test') {
             steps {
                 // Run tests if applicable
-                sh 'mvn test'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                // Deploy your artifact, if necessary
-                // Example: sh 'mvn deploy'
-		sh 'mvn deploy'
+                echo 'test stage'
             }
         }
     }
