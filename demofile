@@ -23,7 +23,7 @@ pipeline {
             steps {
                 // Deploy your artifact, if necessary
                 // Example: sh 'mvn deploy'
-		sh 'mvn deploy'
+		// sh 'mvn deploy'
             }
         }
     }
